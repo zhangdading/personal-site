@@ -1,237 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="张大鼎的个人学术主页，关注天体测量、航天器光行差自主导航、系统误差建模与天文数据智能处理。">
-  <title>张大鼎 | 个人主页</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="张大鼎的个人学术主页。南京大学硕士研究生，研究兴趣包括天体测量、天球参考架、VLBI 与天文自主导航。">
+  <title>张大鼎 · Da-Ding Zhang</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header" data-header>
-    <a class="brand" href="#home" aria-label="返回首页">
-      <span class="brand-mark">ZD</span>
-      <span>张大鼎</span>
-    </a>
-    <nav class="site-nav" aria-label="主导航">
-      <a href="#research">研究</a>
-      <a href="#nsfc">国自然</a>
-      <a href="#projects">项目</a>
-      <a href="#experience">经历</a>
-      <a href="#contact">联系</a>
-    </nav>
+  <a class="skip" href="#home">跳至正文</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home">Da-Ding Zhang</a>
+      <nav aria-label="主导航">
+        <a href="#research">研究</a>
+        <a href="#publications">论文</a>
+        <a href="#projects">项目</a>
+        <a href="#talks">报告</a>
+        <a href="#experience">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Nanjing University · Astrometry · Autonomous Navigation</p>
-          <h1>张大鼎</h1>
-          <p class="lead">围绕航天器光行差自主导航中的天体测量系统误差，做星表建模、误差传播、蒙特卡洛仿真与工程验证。</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#nsfc">查看核心项目</a>
-            <a class="button secondary" href="mailto:221840040@smail.nju.edu.cn">发送邮件</a>
-          </div>
-        </div>
-        <figure class="hero-portrait reveal">
-          <img src="your-photo.jpg" alt="张大鼎在中国天文学会2025年学术年会上作报告">
-          <figcaption>中国天文学会2025年学术年会口头报告</figcaption>
-        </figure>
+  <main id="home" class="shell">
+    <section class="intro" aria-labelledby="name">
+      <div>
+        <h1 id="name">张大鼎<span lang="en">Da-Ding Zhang</span></h1>
+        <p class="affiliation">南京大学天文与空间科学学院 · 硕士研究生</p>
+        <p class="bio">我在<a href="https://njuastrometry.github.io/zh/">南京大学天体测量课题组</a>攻读硕士学位，导师为<a href="https://liuniu.fun/">刘牛</a>。我的研究兴趣包括高精度天体测量、天球参考架与天文自主导航。</p>
+        <ul class="profile-links" aria-label="个人链接">
+          <li><a href="mailto:221840040@smail.nju.edu.cn">邮箱</a></li>
+          <li><a href="https://github.com/zhangdading">GitHub</a></li>
+          <li><a href="https://njuastrometry.github.io/zh/author/%E5%BC%A0%E5%A4%A7%E9%BC%8E/">课题组个人页</a></li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/conference-2025.webp" alt="张大鼎在中国天文学会学术年会上作口头报告" width="960" height="640">
+        <figcaption>中国天文学会学术年会 · 2025 年 11 月</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-title">
+      <h2 id="research-title">研究<span lang="en">Research</span></h2>
+      <div>
+        <h3>地球章动与 VLBI</h3>
+        <p>硕士阶段参与新的地球章动模型研制，关注甚长基线干涉测量（VLBI）理论时延与地球定向参数。</p>
+        <h3>天球参考架与天体测量星表</h3>
+        <p>关注 Gaia 光学天体测量与 VLBI 射电天体测量，以及不同波段天球参考架之间的联系。</p>
+        <h3>恒星光行差自主导航</h3>
+        <p>本科阶段研究 Gaia DR3 导航星表的构建与性能，并评估星表和底片常数解的不确定度对速度估计的影响。</p>
       </div>
     </section>
 
-    <section class="section intro" aria-labelledby="intro-title">
-      <div class="section-inner intro-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Profile</p>
-          <h2 id="intro-title">个人概览</h2>
-        </div>
-        <div class="intro-content reveal">
-          <p>南京大学天文与空间科学学院空间科学与技术专业本科生，已保研至本校天体测量方向。研究兴趣包括 Gaia 星表应用、光行差自主导航、近场 VLBI 延迟模型、轨道动力学与机器学习在天文数据中的应用。</p>
-          <dl class="metrics" aria-label="个人亮点">
-            <div>
-              <dt>2</dt>
-              <dd>第一作者论文</dd>
-            </div>
-            <div>
-              <dt>1</dt>
-              <dd>国家级本科生科研项目负责人</dd>
-            </div>
-            <div>
-              <dt>96%</dt>
-              <dd>GRB 分类模型准确率</dd>
-            </div>
-          </dl>
-        </div>
+    <section class="section" id="publications" aria-labelledby="papers-title">
+      <h2 id="papers-title">代表论文<span lang="en">Publications</span></h2>
+      <ul class="entries">
+        <li>
+          <h3 lang="en"><a href="https://doi.org/10.3390/universe12070197">Astrometric Systematic Errors as a Limiting Factor in Stellar-Aberration-Based Autonomous Navigation</a></h3>
+          <p class="meta" lang="en"><strong>Da-Ding Zhang</strong>, Mu-Zi Li, Niu Liu · <i>Universe</i> 12(7), 197 (2026)</p>
+          <p>利用 Gaia DR3 进行全天评估，比较九种底片常数模型，并量化底片常数解不确定度对应的速度误差量级。</p>
+        </li>
+        <li>
+          <h3 lang="en"><a href="https://doi.org/10.1051/0004-6361/202558731">Astrometric properties of reference frame sources as a function of redshift</a></h3>
+          <p class="meta" lang="en">Z.-Y. Zhang et al. · <i>Astronomy &amp; Astrophysics</i> 708, A83 (2026)</p>
+          <p>利用射电和光学星表研究参考架源的天体测量性质及其与红移的关系。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">项目<span lang="en">Projects</span></h2>
+      <ul class="entries">
+        <li id="nsfc">
+          <h3>航天器光行差自主导航技术中的天体测量系统误差研究</h3>
+          <p class="meta">国家自然科学基金本科生项目 · 负责人</p>
+          <p>建立从星表和底片模型到导航量的误差传播关系，评估底片常数解的精度，并探索利用星对角距减小几何畸变的影响。</p>
+        </li>
+        <li>
+          <h3>基于 Gaia DR3 的光行差导航星表</h3>
+          <p>从导航星密度、全天成像概率和星位精度三个方面评估导航星表，分析恒星自行对跨历元导航精度的影响。</p>
+          <p><a href="#talks">查看相关会议报告</a></p>
+        </li>
+        <li>
+          <h3>卫星自动定轨与姿态调整</h3>
+          <p class="meta">大学生创新训练项目 · 核心成员</p>
+          <p>用 MATLAB 实现 Laplace 定轨算法，并用 STK 开展链路仿真。</p>
+        </li>
+        <li>
+          <h3>伽马射线暴（GRB）密度图分类</h3>
+          <p>将 FITS 观测数据转换为标准化密度图，训练卷积神经网络进行分类。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="talks" aria-labelledby="talks-title">
+      <h2 id="talks-title">报告<span lang="en">Talks</span></h2>
+      <div>
+        <h3>Gaia 星表在光行差自主导航中的应用研究</h3>
+        <p class="meta">中国天文学会学术年会 · 天力、天测分会场 · 口头报告 · 2025 年 11 月</p>
+        <p><a href="https://2025casmeeting.casconf.cn/static/1940323105373294592/pages/file/4448334a334d4945a6ad46345ed9928d.pdf">会议日程与摘要（PDF）</a></p>
       </div>
     </section>
 
-    <section class="section research" id="research" aria-labelledby="research-title">
-      <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Research</p>
-          <h2 id="research-title">研究主线</h2>
-        </div>
-        <div class="research-grid">
-          <article class="research-item reveal">
-            <span class="item-index">01</span>
-            <h3>航天器光行差自主导航</h3>
-            <p>以深空探测中的毫角秒级光行差信号为对象，评估星表精度、观测模型和仪器误差对导航结果的限制。</p>
-          </article>
-          <article class="research-item reveal">
-            <span class="item-index">02</span>
-            <h3>天体测量系统误差传播</h3>
-            <p>构建从星表误差、底片模型误差到导航量误差的传递链，用仿真给出精度下限和敏感参数。</p>
-          </article>
-          <article class="research-item reveal">
-            <span class="item-index">03</span>
-            <h3>近场 VLBI 延迟模型</h3>
-            <p>在比利时皇家天文台访问期间，参与近场 VLBI 观测模型与延迟计算相关研究。</p>
-          </article>
-        </div>
-      </div>
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">经历<span lang="en">Education &amp; Visits</span></h2>
+      <dl class="timeline">
+        <dt>2026 年至今</dt>
+        <dd>南京大学天文与空间科学学院 · 硕士研究生</dd>
+        <dt>2026 年 3–5 月</dt>
+        <dd>比利时皇家天文台 · 访问期间开展近场 VLBI 理论时延研究</dd>
+        <dt>2022–2026 年</dt>
+        <dd>南京大学 · 空间科学与技术学士</dd>
+      </dl>
     </section>
 
-    <section class="section nsfc" id="nsfc" aria-labelledby="nsfc-title">
-      <div class="section-inner nsfc-layout">
-        <figure class="nsfc-visual reveal">
-          <img src="assets/project-nsfc.png" alt="航天器光行差自主导航技术中的天体测量系统误差研究项目封面">
-        </figure>
-        <div class="nsfc-copy reveal">
-          <p class="eyebrow">Core Project</p>
-          <h2 id="nsfc-title">航天器光行差自主导航技术中的天体测量系统误差研究</h2>
-          <p class="nsfc-lead">国家自然科学基金本科生项目，负责人。项目聚焦深空自主导航中“信号弱、误差强”的核心矛盾，分析天体测量系统误差如何限制光行差导航精度。</p>
-          <div class="proof-grid" aria-label="项目要点">
-            <div>
-              <strong>问题</strong>
-              <span>毫角秒级光行差信号容易被星表、底片模型与仪器畸变误差淹没。</span>
-            </div>
-            <div>
-              <strong>方法</strong>
-              <span>建立误差传播链，结合蒙特卡洛仿真评估底片常数法精度下限。</span>
-            </div>
-            <div>
-              <strong>探索</strong>
-              <span>提出星对角距法，尝试绕开部分仪器畸变误差对导航结果的影响。</span>
-            </div>
-            <div>
-              <strong>产出</strong>
-              <span>核心成果已整理投稿，并与 Gaia 星表导航应用论文形成连续研究线索。</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Selected Work</p>
-          <h2 id="projects-title">相关项目与成果</h2>
-        </div>
-        <div class="project-list">
-          <article class="project-card paper-card reveal">
-            <div>
-              <p class="project-kicker">第一作者 · 中文核心接收</p>
-              <h3>基于 Gaia 星表的光行差导航星表构建分析</h3>
-              <p>基于上海航天八院项目，评估 Gaia 星表在深空探测任务中的导航性能，论文已被《飞控与探测》接收。</p>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <img src="assets/project-orbit.png" alt="地球卫星定时测算方案项目封面">
-            <div>
-              <p class="project-kicker">大学生创新训练项目 · 核心成员</p>
-              <h3>卫星自动定轨与姿态调整</h3>
-              <p>使用 MATLAB 实现 Laplace 定轨算法，并通过 STK 搭建链路仿真场景，分析载噪比、误码率并优化链接策略。</p>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <img src="assets/project-grb.png" alt="GRB 密度图分类系统项目封面">
-            <div>
-              <p class="project-kicker">AI for Science · 负责人</p>
-              <h3>GRB 密度图分类系统</h3>
-              <p>将 FITS 观测数据处理为标准化密度图，基于 Create ML 训练 CNN 模型，实现特殊案例的自动分类。</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section experience" id="experience" aria-labelledby="experience-title">
-      <div class="section-inner timeline-layout">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Experience</p>
-          <h2 id="experience-title">经历</h2>
-        </div>
-        <ol class="timeline">
-          <li class="reveal">
-            <time>2026.03 - 2026.05</time>
-            <div>
-              <h3>比利时皇家天文台访问学者</h3>
-              <p>开展近场 VLBI 延迟模型相关研究。</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <time>2025.11</time>
-            <div>
-              <h3>中国天文学会学术年会口头报告</h3>
-              <p>报告 Gaia 星表在光行差自主导航中的应用研究。</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <time>2024.09 - 2025.06</time>
-            <div>
-              <h3>南京大学天空院团学联主席</h3>
-              <p>组织学术文体活动二十余次，参与学院宣传与新生分流讲座。</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <time>2022.09 - 2026.06</time>
-            <div>
-              <h3>南京大学空间科学与技术</h3>
-              <p>GPA 4.2/5.0，曾获国家天文台奖学金、人民奖学金、校优秀学生等荣誉。</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section toolkit" aria-labelledby="toolkit-title">
-      <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Toolkit</p>
-          <h2 id="toolkit-title">工具箱</h2>
-        </div>
-        <div class="tool-grid reveal">
-          <span>Python</span>
-          <span>MATLAB</span>
-          <span>STK</span>
-          <span>Create ML</span>
-          <span>FITS</span>
-          <span>LaTeX</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-inner reveal">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">保持联系</h2>
-        <p>欢迎交流天体测量、深空自主导航、VLBI 建模和天文数据处理相关话题。</p>
-        <a class="button primary" href="mailto:221840040@smail.nju.edu.cn">221840040@smail.nju.edu.cn</a>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">联系<span lang="en">Contact</span></h2>
+      <div>
+        <p>南京大学天文与空间科学学院</p>
+        <p><a class="email" href="mailto:221840040@smail.nju.edu.cn">221840040@smail.nju.edu.cn</a></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>© 2026 张大鼎</span>
-    <span>Astrometry · Autonomous Navigation · Astronomy Data</span>
+    <div class="shell footer-inner">
+      <span>© 2026 Da-Ding Zhang</span>
+      <a href="#home">返回顶部 ↑</a>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
